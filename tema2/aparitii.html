@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Cele mai multe aparitii</title>
+    </head>
+    <body>
+        <div id="menu">
+            <ul>
+              <li><a href="index.html">Acasa</a></li>
+              <li><a>Statistici</a>
+               <ul>
+                <li><a href="castigatoare.html">Castigatoare</a></li>
+                <li><a href="golgheteri.html">Golgheteri</a></li>
+                <li><a href="aparitii.html">Aparitii</a></li>
+               </ul>
+              </li>
+             </ul>
+       </div>
+       <br><br><br><br><br>
+        <div>
+            <button type="button" onclick="getPlayers()" >Get players</button>
+        </div>
+        <br>
+        <div>
+            <strong>Adaugare jucator</strong>
+            <input type="text" placeholder="nume" id="name">
+            <input type="text" placeholder="selectii" id="caps">
+            <input type="text" placeholder="img url" id="imgUrl">
+            <button type="button" onclick="insertPlayer()">Adaugare Jucator</button>
+        </div>
+        <br>
+        <div>
+            <strong>Stergere jucator</strong>
+            <input type="text" placeholder="id" id="playerId">
+            <button type="button" onclick="deletePlayer()">Sterge</button><br>
+        </div>
+        
+    </body>
+</html>
